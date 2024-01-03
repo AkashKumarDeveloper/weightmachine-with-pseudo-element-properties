@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: black;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box2{
+    height: 377px;
+    width: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    bottom: 50px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.box2::before{
+    content: "";
+    height: 10px;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 349px;
+    background-color: black;
+}
+
+.box2::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 347px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box6{
+    width: 101px;
+    height: 140px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 190px;
+    left: 61%;
+    background: linear-gradient(0deg , rgb(63, 62, 62) 50%, transparent 50%);
+}
+.box7{
+    width: 101px;
+    height: 140px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 190px;
+    right: 61%;
+    background: linear-gradient(0deg , rgb(63, 62, 62) 50%, transparent 50%);
+}
+
+.box6::after{
+    content: "";
+    height: 154px;
+    width: 7px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(17deg);
+    bottom: 66px;
+    left: 22px;
+}
+
+.box6::before{
+    content: "";
+    height: 154px;
+    width: 7px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(163deg);
+    bottom: 66px;
+    right: 22px;
+}
+
+.box7::after{
+    content: "";
+    height: 154px;
+    width: 7px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(17deg);
+    bottom: 66px;
+    left: 22px;
+}
+
+.box7::before{
+    content: "";
+    height: 154px;
+    width: 7px;
+    position: absolute;
+    background-color: black;
+    transform: rotate(163deg);
+    bottom: 66px;
+    right: 22px;
+}
